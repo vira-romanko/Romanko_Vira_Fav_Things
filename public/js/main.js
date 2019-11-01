@@ -2,37 +2,37 @@
 
 const myVM = (() => {
     // get the user buttons and fire off an async DB query with Fetch
-    let userButtons = document.querySelectorAll( ' .u-link'),
+    let userButtons = document.querySelectorAll( ' .b-link'),
     lightbox = document.querySelector('.lightbox');
 
-    function renderSocialMedia(socialMedia){
-        return `<ul class="u-social>
-        ${socialMedia.map(item => `<li>${item}</li>`).join("")}
+    function renderBookQuote(bookQuote){
+        return `<ul class="b-quote">
+        ${bookQuote.map(item => `<li>${item}</li>`).join("")}
         </ul>`
     }
 
 
 
-    function parseUserData(person) {// person in the database is a result//model, lightbox, loading animation, css, js magic
+    function parseBookData(book) {// person in the database is a result//model, lightbox, loading animation, css, js magic
         let targetDiv = document.querySelector(' .lb-content'),
             targetImg = lightbox.querySelector('img');
 
 
-        let bioContent = `
-        <p>${person.bio}</p>
-        <h4> Social Media:</h4>
-        ${renderSocialMedia(person.social)}`;
+        let bookDescription = `
+        <p>${book.description}</p>
+        <h4> Book quote:</h4>
+        ${renderBookQuote(book.quote)}`;
 
-        console.log(bioContent);
-        targetDiv.innerHTML = bioContent;
-        targetImg.src = person.imgsrc;
+        console.log(bookDescription);
+        targetDiv.innerHTML = bookDescription;
+        targetImg.src = book.imgsrc;
 
         lightbox.classList.add('show-lb');
 
 
     }
 
-    function getUserData(event) {
+    function getBookData(event) {
         event.preventDefault();// kill the default a tag behaviour (dont navigate anywhere)
         //debugger;
 
@@ -49,14 +49,14 @@ const myVM = (() => {
               data[0].imgsrc = imgSrc;
 
 
-              parseUserData(data[0]);
+              parseBookData(data[0]);
           })
           .catch((err) => {
               console.log(err)
           });
     }
 
-    userButtons.forEach(button => button.addEventListener('click', getUserData));
+    userButtons.forEach(button => button.addEventListener('click', getBookData));
     lightbox.querySelector(' .close').addEventListener('click',  function() {
         lightbox.classList.remove('show-lb');
     });

@@ -10,7 +10,7 @@
     <!-- link to reset -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>My Favourite Books</title>
 </head>
 
 <body>
@@ -46,21 +46,21 @@
 
     <script type="module" src="js/main.js"></script>
     <script>
-        var name = "Justin";
+        var name = "Books";
 
         console.log('name in main file: ' + name);
     </script>
 
     <!-- templates -> these don't get rendered immediately -->
-    <template id="user-template">
+    <template id="book-template">
         <!-- you can put all kinds of markup here - semantic tagging, etc -->
         <div class="user-panel">
             <div class="user-panel-header">
-                <img class="u-avatar"></img>
-                <h1 class="u-name"></h1>
+                <img class="b-cover"></img>
+                <h1 class="b-name"></h1>
             </div>
 
-            <button class="user-button">More Details</button>
+            {{!-- <button class="b-button">More Details</button> --}}
         </div>
     </template>
     <!-- end templates-->
