@@ -9,40 +9,41 @@
     <!-- css stuff -->
     <!-- link to reset -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/main.css">
     <title>My Favourite Books</title>
 </head>
 
 <body>
-    <h1>Fun with Modules!</h1>
-    <nav data-module="nav">
-        <!-- nav elements must have nav-item -->
-        <ul>
-            <li><a href="#" class="nav-item">1</a></li>
-            <li><a href="/2" class="nav-item">2</a></li>
-            <li><a href="#section3" class="nav-item">3</a></li>
-            <li><a href="#section4" class="nav-item">4</a></li>
-            <li><a href="#section5" class="nav-item">5</a></li>
-        </ul>
-    </nav>
-
+    <h1 class="hidden">Gotta love Sql!</h1>
+    
     <main>
-        {{{ body }}}
+        <section class="main">
+            <div class="main-q main-q-2"> 
+              <blockquote cite="https://quoteinvestigator.com/2018/11/02/reader/" >
+              <p> "<span> A</span> reader lives a thousand lives before he dies. The man who never reads lives only one.
+                " </p>
+        
+        </blockquote>
+         <div class="attribution"> 
+        <p class="author">  
+         - George R. R. Martin
+        </p>
+        </div>
+            </div>
+             
+       
+        </section>
+       <section class="purple">
+       {{{ body }}}
+       </section>
+      
     </main>
 
-    <footer>
-        <p>here's some footer text</p>
 
-        <ul>
-            <li><a href="#" class="nav-item">1</a></li>
-            <li><a href="/2" class="nav-item">2</a></li>
-            <li><a href="#section3" class="nav-item">3</a></li>
-            <li><a href="#section4" class="nav-item">4</a></li>
-            <li><a href="#section5" class="nav-item">5</a></li>
-        </ul>
-    </footer>
-
-    <a id="to-top" href="#" class="nav-item">back to top</a>
+    <a id="to-top" href="#" class="nav-item">Back to top</a>
 
     <script type="module" src="js/main.js"></script>
     <script>

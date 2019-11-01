@@ -6,17 +6,139 @@
 body {
     color: $main-color;
     background-color: $body-bg;
+    font-family: 'Vollkorn', serif;
+}
+main{
+    position: relative;
+    .main-q{
+        font-family: 'Vollkorn', serif;
+        font-size: 4vh;
+        //margin-top: 20px;
+        padding: 20px;
+        margin : 20px auto; 
+  
+        position : relative; 
+        max-width : 600px; 
+         span{
+             color:#d7392e;
+         
+             font-size: 7vh;
+             font-weight: bold;
+         }
+ 
+        }
+        .main-q-2 blockquote {
+            padding-top : 140px; 
+          }
+
+          .attribution {
+            text-align : right; 
+            margin-right: 20px;
+        
+            
+          } 
+          
+           .author {
+            color:rgba(255, 137, 132, 0.8);
+            font-size : 2.75vh; 
+            font-weight : bold; 
+            text-shadow : 0 1px 1px rgba(255, 255, 255, 0.1); 
+            text-transform : uppercase;
+            
+           }
+        
 }
 
-h1, h2, h3 { color: $heading-color }
+
+//some raw css
+.main-q-2 blockquote:after {
+    background: none repeat scroll 0 0 rgba(236, 45, 52, 0.8);
+    border-radius: 60% 60% 60% 60%;
+    color:rgba(255, 137, 132, 0.8); //rgba(255, 255, 255, 0.5);
+    content: "❞";
+    font-family: 'Vollkorn', serif;
+    font-size: 50px;
+    height: 100px;
+    left: 50%;
+    line-height: 130px;
+    margin-left: -65px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 137, 132, 0.1);
+    top: 0;
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+h1, h2, h3 { 
+    color: $heading-color
+ }
+ h1{
+     font-size: 3vh;
+     
+    
+     &:hover{
+         color: rgba(236, 45, 52, 0.8);
+        
+     }
+ }
 
 .panel { min-height: 60vh; }
 
-.panel:nth-child(odd) {
-    background-color: salmon;
-    color: white;
+
+.hidden{
+    display:none;
 }
 
-#to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
+#to-top {
+    color: rgba(255, 137, 132, 0.8);
+    font-family: 'Vollkorn', serif;
+    font-size:3vh;
+    font-weight: bold;
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    background-color:rgba(236, 45, 52, 0.8);
+    border-radius: 5vh;
+    text-decoration: none;
 
-@import 'modules/_footer'
+    &:hover{
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from {color: rgba(255, 137, 132, 0.8);}
+  to {color: #101017;}
+}
+      }
+
+      .subheader{
+          margin-left: 30px;
+          opacity: 0.8;
+          font-family: 'Arvo', serif;
+          font-size: 2.75vh;
+      }
+
+
+
+
+
+
+.purple
+ {
+  width: 100%;
+  height: 80vh;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+ 
+}
+
+	
+
+
+
+
+
