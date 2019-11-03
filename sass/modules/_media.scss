@@ -1,0 +1,153 @@
+@media screen and (min-width: 768px) {
+    
+    
+    .books {
+        .user-panel { 
+            flex: 1 1;
+            h1{
+                font-size: 4vh;
+        }
+        
+       
+
+            .b-cover { max-width: 300px; }
+        }
+    }
+
+    .purple{
+        .subheader{
+          
+            font-size: 4vh;
+        }
+        .lightbox{
+
+
+            .b-quote {
+    
+        
+                font-size: 4.2vh;
+               
+             }
+             
+             .quote-js{
+                 
+                 font-size: 3.5vh;
+             }
+             .desc-js{
+                 font-size: 3vh;
+             }
+
+             .close{
+                font-size: 3vh;
+            }
+
+        
+             
+        }
+
+        
+           
+        
+
+    
+
+    }
+       
+}
+
+@media screen and (min-width: 1024px) {
+
+    .books {
+        .user-panel { 
+            h1{
+                font-size: 5vh;
+        }
+        
+}
+
+}
+    
+
+.purple{
+    .subheader{
+      
+        font-size: 4vh;
+    }
+
+    
+    
+}
+
+
+    .show-lb {
+
+
+        display: flex !important;
+        flex-direction:table-column !important;
+     
+
+         }
+.scroll{
+    display: none;
+}
+
+.lightbox { 
+    display: none;
+    //display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    width: 100%;
+    //position: fixed;
+    top: 0;
+    z-index: 8000;
+    padding: 20px;
+
+    background-color: #101017;
+}
+.close  {
+  
+    height: 2%;
+    width: 2%;
+   flex: 0.5;
+    margin-right: 20px;
+    background-color:#3e3d4b;
+    span{
+        font-size:2.75vh;
+    }
+    
+    
+
+  
+  
+ 
+  
+      
+}
+
+.main{
+    .main-q-2 blockquote:after {
+        background: none repeat scroll 0 0 $red;
+        border-radius: 60% 60% 60% 60%;
+        color: $light-salmon; //rgba(255, 255, 255, 0.5);
+        content: "❞";
+        font-family: 'Vollkorn', serif;
+        font-size: 60px;
+        height: 130px;
+        left: 50%;
+        line-height: 170px;
+        margin-left: -65px;
+        position: absolute;
+        text-align: center;
+        text-shadow: 0 1px 1px rgba(255, 137, 132, 0.1);
+        top: 0;
+        width: 130px;
+        margin-top: 20px;
+    }
+}
+
+
+
+}
+
