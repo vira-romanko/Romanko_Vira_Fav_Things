@@ -1,7 +1,7 @@
 # My Favourite Books
 
 Application that highlights my 3 favourite books.Visit the app to know about!
-![Image description](public/images/mockup.jpg)
+
 
 
 ## Get started
@@ -9,10 +9,6 @@ Application that highlights my 3 favourite books.Visit the app to know about!
 * In Browser go: ```localhost:3000```
 
 
-
-## Deployment
-
-The App is live oh Heroku hosting service at
 
 
 ## Build with/ Tools
