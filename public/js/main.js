@@ -1,5 +1,3 @@
-// this is a partially revealing module pattern - just a variation on what we've already done
-
 const myVM = (() => {
     // get the user buttons and fire off an async DB query with Fetch
     let userButtons = document.querySelectorAll( ' .b-link'),
@@ -19,8 +17,8 @@ const myVM = (() => {
 
 
         let bookDescription = `
-        <p>${book.description}</p>
-        <h4> Book quote:</h4>
+        <p class="desc-js">${book.description}</p>
+        <h4 class="quote-js"> Book quote:</h4>
         ${renderBookQuote(book.quote)}`;
 
         console.log(bookDescription);

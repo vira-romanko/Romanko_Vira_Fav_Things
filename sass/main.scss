@@ -1,13 +1,25 @@
 @import 'modules/_vars';
-@import 'modules/_navbar';
+@import 'modules/_purple';
 @import 'modules/_books';
 @import 'modules/_lightbox';
+@import 'modules/media';
+
 
 body {
     color: $main-color;
     background-color: $body-bg;
     font-family: 'Vollkorn', serif;
 }
+
+
+h1, h2, h3 { 
+    color: $heading-color
+ }
+ .hidden{
+    display:none;
+}
+
+//top static quote 
 main{
     position: relative;
     .main-q{
@@ -20,7 +32,7 @@ main{
         position : relative; 
         max-width : 600px; 
          span{
-             color:#d7392e;
+             color:$dark-salmon;
          
              font-size: 7vh;
              font-weight: bold;
@@ -39,7 +51,7 @@ main{
           } 
           
            .author {
-            color:rgba(255, 137, 132, 0.8);
+            color:$light-salmon;
             font-size : 2.75vh; 
             font-weight : bold; 
             text-shadow : 0 1px 1px rgba(255, 255, 255, 0.1); 
@@ -50,11 +62,11 @@ main{
 }
 
 
-//some raw css
+//some raw css- circle quote
 .main-q-2 blockquote:after {
-    background: none repeat scroll 0 0 rgba(236, 45, 52, 0.8);
+    background: none repeat scroll 0 0 $red;
     border-radius: 60% 60% 60% 60%;
-    color:rgba(255, 137, 132, 0.8); //rgba(255, 255, 255, 0.5);
+    color: $light-salmon; //rgba(255, 255, 255, 0.5);
     content: "❞";
     font-family: 'Vollkorn', serif;
     font-size: 50px;
@@ -71,26 +83,25 @@ main{
 }
 
 
-h1, h2, h3 { 
-    color: $heading-color
- }
+//book name
  h1{
      font-size: 3vh;
      
     
      &:hover{
-         color: rgba(236, 45, 52, 0.8);
+         
+         color: $red;
         
      }
  }
 
+
+ //light purple section
 .panel { min-height: 60vh; }
 
 
-.hidden{
-    display:none;
-}
 
+//back to top
 #to-top {
     color: rgba(255, 137, 132, 0.8);
     font-family: 'Vollkorn', serif;
@@ -99,32 +110,34 @@ h1, h2, h3 {
     float: right;
     margin: 20px;
     padding: 10px;
-    background-color:rgba(236, 45, 52, 0.8);
+    background-color:$red;
     border-radius: 5vh;
     text-decoration: none;
+    opacity: 0.75;
 
     &:hover{
   animation-name: example;
   animation-duration: 1s;
 }
 @keyframes example {
-  from {color: rgba(255, 137, 132, 0.8);}
-  to {color: #101017;}
+  from {color: $light-salmon;}
+  to {color: $body-bg;}
 }
       }
-
+      //click on the names below p
       .subheader{
           margin-left: 30px;
           opacity: 0.8;
           font-family: 'Arvo', serif;
           font-size: 2.75vh;
+          color:#3e3d4b;
       }
 
 
 
 
 
-
+//palallex banner for book section
 .purple
  {
   width: 100%;
@@ -133,12 +146,6 @@ h1, h2, h3 {
   transform: translateZ(-1px);
   overflow-x: hidden;
   overflow-y: auto;
+  
  
 }
-
-	
-
-
-
-
-
