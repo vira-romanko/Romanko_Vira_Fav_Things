@@ -1,6 +1,6 @@
 # My Favourite Books
 
-Application that highlights my 3 favourite books.Visit the app to know about!
+Application that highlights my 3 favourite books.Visit the app to know more!
 
 
 
