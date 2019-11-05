@@ -1,0 +1,56 @@
+.error-style{
+    font-size: 8vh;
+    margin: 0;
+    
+}
+.error-h{
+    font-size: 3vh;
+    text-align: center;
+    display:block;
+    text-decoration:none;
+    margin: 20px;
+    margin-top:70px;
+    color: $red;
+    font-weight: bold;
+}
+
+.error-status{
+    text-align: center;
+    margin: 0;
+}
+.go-back{
+    padding: 10px;
+     display: block;
+     text-decoration:none;
+     font-size: 3vh;
+     border-radius: 50%;
+     color: white;
+     border-radius: 5vh;
+     width: 30%;
+     text-align: center;
+     margin: 0 auto;
+     background-color:#e04153;
+     
+    
+}
+
+.error-img{
+    width:auto;
+    display:block;
+    font-size: 3vh;
+    margin: 0 auto;
+    text-align: center;
+    img{
+        max-width:60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    p{
+        padding: 10px;
+    }
+
+     
+
+   
+}
+

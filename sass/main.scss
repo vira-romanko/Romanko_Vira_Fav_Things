@@ -2,8 +2,8 @@
 @import 'modules/_purple';
 @import 'modules/_books';
 @import 'modules/_lightbox';
-@import 'modules/media';
-
+@import 'modules/_media';
+@import 'modules/_errors';
 
 body {
     color: $main-color;
@@ -59,7 +59,7 @@ main{
             
            }
         
-}
+
 
 
 //some raw css- circle quote
@@ -80,6 +80,7 @@ main{
     top: 0;
     width: 100px;
     margin-top: 20px;
+}
 }
 
 
