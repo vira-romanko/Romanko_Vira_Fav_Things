@@ -3,6 +3,10 @@ const router = express.Router();
 
 const sql = require('../utils/sql');
 
+
+
+
+
 router.get('/', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
@@ -23,7 +27,7 @@ router.get('/', (req, res) => {
     })
 })
 //looling for localhost:3000/anything
-router.get('/:id', (req, res) => {
+router.get('/books/:id', (req, res) => {
     console.log("hit a dynamic route");
     console.log(req.params.id);
 
